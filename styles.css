@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f4;
+    min-height: 100vh;
+}
+
+.pantalla {
+    width: 100%;
+    max-width: 423px;
+    margin: 0 auto;
+    background-color: #f1f3f4;
+    min-height: 100vh;
+    padding: 28px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cajita {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 24px 20px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+h1 {
+    color: #34495e;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 17px;
+}
+
+.numero {
+    color: #3498db;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#boton {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+#boton:hover {
+    background-color: #27ae60;
+}
+
+#boton:active {
+    transform: scale(0.98);
+}
+
+.tabla-caja {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+thead {
+    background-color: #f5f6f7;
+}
+
+th {
+    color: #777777;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td {
+    color: #555555;
+    font-size: 12px;
+    padding: 9px;
+    border-top: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 400px) {
+    .pantalla {
+        padding: 20px 10px;
+    }
+
+    .cajita {
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .texto {
+        font-size: 11px;
+    }
+}

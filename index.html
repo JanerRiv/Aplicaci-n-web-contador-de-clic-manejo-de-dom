@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="pantalla">
+        
+        <div class="cajita">
+            <h1>Interactividad con el DOM</h1>
+            
+            <p class="texto">
+                Haz clic en el botón para incrementar el contador
+                y registrar la hora exacta del evento en la tabla.
+            </p>
+
+            <div id="numero" class="numero">0</div>
+
+            <button id="boton" type="button">¡Haz Clic Aquí!</button>
+
+            <div class="tabla-caja">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Clic</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filas">
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="click.js"></script>
+</body>
+
+</html>
